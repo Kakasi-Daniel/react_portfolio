@@ -217,8 +217,8 @@
     bottom: 35%;
   }
   .sun {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
   }
 }
 
@@ -226,6 +226,10 @@
   .hero {
     font-size: 150px;
     bottom: 30%;
+  }
+  .sun {
+    width: 400px;
+    height: 400px;
   }
 }
 
@@ -277,11 +281,6 @@
   to {
     transform: translateX(50px);
   }
-}
-
-.sun {
-  width: 400px;
-  height: 400px;
 }
 
 @media (max-width: 600px){
