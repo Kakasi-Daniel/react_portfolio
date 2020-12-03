@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import { React, useState } from 'react';
 import './App.css';
+import Page1 from './Page1';
 
 function App() {
+  // eslint-disable-next-line
+  const [translate, setTranslate] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="slider_container">
+      <div className="slider" style={{ left: `${translate}vw` }}>
+        <Page1 />
+        <Page1 />
+        <Page1 />
+      </div>
     </div>
   );
 }

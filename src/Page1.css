@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.page1_container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(42, 151, 216, 1) 0%,
+    rgba(200, 240, 252, 1) 78%,
+    rgba(246, 251, 254, 1) 100%
+  );
+  transition: background 2s;
+  position: relative;
+}
+
+.mobile_navigation {
+  display: none;
+}
+
+.hill {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+.color_white {
+  color: #f9f9f9;
+}
+
+.hero {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 150px;
+  z-index: 50;
+  bottom: 30%;
+}
+
+.st {
+  animation: appear 1s forwards;
+}
+
+.nd {
+  opacity: 0;
+  transform: translateY(200%);
+  animation: appear 0.7s forwards 0.5s;
+}
+
+.moon {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: 110;
+  width: 200px;
+  height: 200px;
+  opacity: 0.5;
+  border-radius: 50%;
+  animation: moonGlow 10s infinite, fall 1s forwards;
+  cursor: pointer;
+  background: url('https://i.pinimg.com/originals/28/d5/05/28d505db881a8b7153d16fc547699603.png') center center/cover no-repeat;
+}
+
+.sun {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: 110;
+  width: 230px;
+  height: 230px;
+  opacity: 0.5;
+  border-radius: 50%;
+  animation: sunGlow 10s infinite, fall 1s forwards;
+  cursor: pointer;
+  background: url('https://www.nicepng.com/png/full/1-15276_sun-png-clip-art-planet-sun-clipart.png') center center/cover no-repeat;
+  
+}
+
+@keyframes fall {
+  from {
+    transform: translateX(-50%) translateY(-100%);
+  }
+  to {
+    transform: translateX(-50%) translateY(0%);
+  }
+}
+
+@keyframes moonGlow {
+  0% {
+    box-shadow: 0 0 20px #fff;
+    opacity: 0.3;
+  }
+
+  50% {
+    box-shadow: 0 0 40px #fff;
+    opacity: 0.7;
+  }
+
+  100% {
+    box-shadow: 0 0 20px #fff;
+    opacity: 0.3;
+  }
+}
+
+@keyframes sunGlow {
+  0% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1150px) {
+  .hero {
+    display: block;
+    font-size: 100px;
+    bottom: 15%;
+    text-align: center;
+  }
+
+  .hill {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    z-index: 100;
+    object-fit: cover;
+  }
+
+  .moon,
+  .sun {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn {
+    display: none !important;
+  }
+
+  .mobile_navigation {
+    display: flex;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    z-index: 150;
+    transform: translateX(-50%);
+  }
+
+  .about_me_mobile,
+  .my_work_mobile{
+    border: none;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: 2px solid #000;
+  }
+  .about_me_mobile{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .my_work_mobile{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+}
+
+@media only screen and (max-height: 750px) {
+  .moon,
+  .sun {
+    width: 120px;
+    height: 120px;
+    top: 7%;
+  }
+
+  .hero {
+    bottom: 7%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    font-size: 100px;
+    bottom: 35%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero {
+    font-size: 150px;
+    bottom: 30%;
+  }
+}
+
+.btn {
+  border: none;
+  align-self: center;
+  display: block;
+  font-size: 20px;
+  background-color: #fff;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about_me_btn {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  animation: leftToRight 1s forwards;
+}
+.my_work_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: rightToLeft 1s forwards;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@keyframes leftToRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes rightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
