@@ -1,17 +1,19 @@
 import { React, useState } from 'react';
 import './App.css';
-import Page1 from './Page1';
+import Home from './Home';
+import About from './About'
+import Work from './Work'
 
 function App() {
   // eslint-disable-next-line
-  const [translate, setTranslate] = useState(0);
+  const [translate, setTranslate] = useState(-100);
 
   return (
     <div className="slider_container">
       <div className="slider" style={{ left: `${translate}vw` }}>
-        <Page1 />
-        <Page1 />
-        <Page1 />
+        <About />
+        <Home goToAbout={() => setTranslate(0)} goToWork={() => setTranslate(-200)}/>
+        <Work />
       </div>
     </div>
   );
