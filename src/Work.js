@@ -1,248 +1,141 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Work.css';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import barbut from './items/barbut.png'
-import cmp from './items/cmp.png'
-import crex from './items/crex.png'
-import ctas from './items/ctas.png'
-import dbook from './items/dbook.png'
-import edgeledger from './items/edgeledger.png'
-import gitfind from './items/gitfind.png'
-import gta from './items/gta.png'
-import kstore from './items/kstore.png'
-import lights from './items/lights.png'
-import memetemplate from './items/memetemplate.png'
-import task from './items/task.png'
-import trackcalorie from './items/trackcalorie.png'
+import Project from './Project';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ctas from './items/ctas.png';
+import ctas_mobile from './items/ctas_mobile.png';
+import old from './items/old.png';
+import old_mobile from './items/old_mobile.png';
+import kstore from './items/kstore.png';
+import kstore_mobile from './items/kstore_mobile.png';
+import barbut from './items/barbut.png';
+import barbut_mobile from './items/barbut_mobile.png';
+import gitfind from './items/gitfind.png';
+import gitfind_mobile from './items/gitfind_mobile.png';
+import dbook from './items/dbook.png';
+import dbook_mobile from './items/dbook_mobile.png';
+import trackcalorie from './items/trackcalorie.png';
+import trackcalorie_mobile from './items/trackcalorie_mobile.png';
+
+const ctasDesc =
+  'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quam, molestiae repudiandae delectus ipsam, odio consequatur molestias maiores hic ipsum totam illo nemo optio impedit laboriosam alias. Ipsa distinctio nobis quibusdam?';
 
 function Work(props) {
-  return <div className="work_container">
-    <button onClick={props.goToHome} className="btn back my_work_btn">
+  let [translate, setTranslate] = useState(0);
+
+  const prevSlide = () => {
+    const totalProjects = document.querySelectorAll('.project').length;
+    const projectWidth = document.querySelector('.projects_slider').clientWidth;
+    let newTranslate;
+    if (translate === 0) {
+      newTranslate = -(totalProjects - 1) * projectWidth;
+    } else {
+      newTranslate = translate + projectWidth;
+    }
+
+    setTranslate(newTranslate);
+  };
+
+  const nextSlide = () => {
+    const totalProjects = document.querySelectorAll('.project').length;
+    const projectWidth = document.querySelector('.projects_slider').clientWidth;
+    const projectsWidth = -projectWidth * (totalProjects-1);
+    console.log(projectsWidth)
+
+    let value;
+
+    value = translate - projectWidth
+
+    if(translate === projectsWidth){
+      value = 0;
+    }
+
+    console.log(value);
+    setTranslate(value);
+  };
+
+  return (
+    <div className="work_container">
+      <button onClick={props.goToHome} className="btn back my_work_btn">
           Back To Home
           <ArrowBackIcon />
         </button>
-      <div id="items">
-        <div class="item">
-          <img id="site" src={kstore} alt="" />
-          <div class="title">
-            <h1>Kstore</h1>
-            <p>eCommerce App with firebase Auth</p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://elegant-joliot-20bd3b.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-        <div class="item">
-          <img id="site" src={ctas} alt="" />
-          <div class="title">
-            <h1>On progress</h1>
-            <p>College landing website</p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://saligny.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={gitfind} alt="" />
-          <div class="title">
-            <h1>GitFind</h1>
-            <p>Find users from Github via GitHub API</p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://kksigit.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={trackcalorie} alt="" />
-          <div class="title">
-            <h1>TrackCalories</h1>
-            <p>Using JavaScript Design Patterns</p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://tcalories.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={barbut} alt="" />
-          <div class="title">
-            <h1>Barbut</h1>
-            <p>Just for fun</p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://barbut.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={task} alt="" />
-          <div class="title">
-            <h1>Task List</h1>
-            <p>Local Storage project</p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://tlistk.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={cmp} alt="" />
-          <div class="title">
-            <h1>Câmpenești</h1>
-            <p>Short presentation of my natal city.</p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://goofy-mcnulty-189da6.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={dbook} alt="" />
-          <div class="title">
-            <h1>DbooK</h1>
-            <p>Unfinished</p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://socialpageapp.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={gta} alt="" />
-          <div class="title">
-            <h1>GTA_Series</h1>
-            <p>Demo page of scroll actions</p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://xenodochial-cray-541b22.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={edgeledger} alt="" />
-          <div class="title">
-            <h1>EdgeLedger</h1>
-            <p>Company landing website</p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://modest-meitner-8b315a.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={crex} alt="" />
-          <div class="title">
-            <h1>Currency exchanger</h1>
-            <p></p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://kksicrex.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={memetemplate} alt="" />
-          <div class="title">
-            <h1>MemeTemp Generator</h1>
-            <p></p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://unruffled-davinci-494ffa.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <img id="site" src={lights} alt="" />
-          <div class="title">
-            <h1>Css animation</h1>
-            <p></p>
-          </div>
-          <div class="my">
-            <a
-              id="launch"
-              target="_blank"
-              href="https://naughty-lamarr-6cc448.netlify.app/"
-              class="btn-light"
-              >View project</a
-            >
+        <button className="mobile_back" onClick={props.goToHome} ><ArrowBackIcon /></button>
+      <div className="projects_container">
+        <button className="arrow arrow_left" onClick={prevSlide}>
+          <ArrowBackIosIcon className="fs_large" />
+        </button>
+        <button className="arrow arrow_right" onClick={nextSlide}>
+          <ArrowForwardIosIcon className="fs_large" />
+        </button>
+        <div className="projects_slider">
+          <div
+            className="projects_slide"
+            style={{ transform: `translateX(${translate}px)` }}
+          >
+            <Project
+              desktop={ctas}
+              mobile={ctas_mobile}
+              title="College Landing Site"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/Saligny"
+              link="https://saligny.netlify.app/"
+            />
+            <Project
+              desktop={old}
+              mobile={old_mobile}
+              title="My old Portfolio"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/kakasi"
+              link="https://kakasidaniel.netlify.app/"
+            />
+            <Project
+              desktop={kstore}
+              mobile={kstore_mobile}
+              title="Ecommerce front-end"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/Kstore"
+              link="https://elegant-joliot-20bd3b.netlify.app/"
+            />
+            <Project
+              desktop={barbut}
+              mobile={barbut_mobile}
+              title="Barbut"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/Barbut"
+              link="https://barbut.netlify.app/"
+            />
+            <Project
+              desktop={gitfind}
+              mobile={gitfind_mobile}
+              title="GitHub Api Demo"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/GitFind"
+              link="https://kksigit.netlify.app/"
+            />
+            <Project
+              desktop={dbook}
+              mobile={dbook_mobile}
+              title="Social Platform front-end"
+              desc={ctasDesc}
+              code="https://socialpageapp.netlify.app/"
+              link="https://github.com/Kakasi-Daniel/ShitBook"
+            />
+            <Project
+              desktop={trackcalorie}
+              mobile={trackcalorie_mobile}
+              title="TrackCalories"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/TrackCalories"
+              link="https://tcalories.netlify.app/"
+            />
           </div>
         </div>
       </div>
-  </div>;
+    </div>
+  );
 }
 
 export default Work;

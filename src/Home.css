@@ -9,6 +9,14 @@
   overflow: hidden;
 }
 
+.night{
+  background:url('./night.jpg') center center/cover no-repeat;
+}
+
+.day{
+  background:url('./day.jpg') center center/cover no-repeat;
+}
+
 .mobile_navigation {
   display: none;
 }
@@ -58,10 +66,10 @@
   border-radius: 50%;
   animation: moonGlow 10s infinite;
   cursor: pointer;
-  background: url('https://www.pngkey.com/png/full/168-1689635_waning-moon-moon.png')
+  background: url('./moon.png')
     center center/cover no-repeat;
   transform: translateX(-50%) translateY(-50vh);
-  transition: transform 2s;
+  transition: transform 2s,filter 2s,opacity 2s;
 }
 
 .sun {
@@ -73,10 +81,10 @@
   height: 400px;
   animation: sunGlow 10s infinite;
   cursor: pointer;
-  background: url('https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Decorative-Elements-PNG/Sun_Effect_Transparent_PNG_Clip_Art_Image.png?m=1507172114')
+  background: url('./sun.png')
     center center/cover no-repeat;
   transform: translateX(-50%) translateY(-50vh);
-  transition: transform 2s;
+  transition: transform 2s,filter 2s,opacity 2s;
 }
 
 @keyframes fall {
@@ -132,7 +140,7 @@
   .hero {
     display: block;
     font-size: 100px;
-    bottom: 15%;
+    bottom: 20%;
     text-align: center;
   }
 
@@ -163,7 +171,7 @@
   .mobile_navigation {
     display: flex;
     position: absolute;
-    bottom: 25%;
+    bottom: 27%;
     left: 50%;
     z-index: 150;
     transform: translateX(-50%);
@@ -215,6 +223,7 @@
     bottom: 10%;
   }
 }
+
 
 @media (min-width: 1200px) {
   .hero {

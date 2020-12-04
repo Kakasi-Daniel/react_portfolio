@@ -9,19 +9,23 @@ function Page1(props) {
     JSON.parse(localStorage.getItem('time')) || false
   );
 
-  let background = time
-    ? `url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Starry-night-sky-cloud-digital-art-1920x1080-wallpapers.jpg') center center/cover no-repeat`
-    : `url('https://i.pinimg.com/originals/6d/df/89/6ddf89a95cc31286387b11c64c1991a8.jpg') center center/cover no-repeat`;
+  let classes = time
+    ? "page1_container night"
+    : "page1_container day";
 
   return (
-    <div className="page1_container" style={{ background: `${background}` }}>
+    <div className={classes} >
       <div
         onClick={() => {
           setTime(!time);
           localStorage.setItem('time', !time);
         }}
         className="moon"
-        style={time ? {transform: 'translateX(-50%) translateY(-0vh)'} : {transform: 'translateX(-50%) translateY(-50vh)'}}
+        style={
+          time
+            ? { transform: 'translateX(-50%) translateY(-0vh)', opacity:'1' }
+            : { transform: 'translateX(-50%) translateY(-50vh)', opacity:'0' }
+        }
       ></div>
       <div
         onClick={() => {
@@ -29,7 +33,11 @@ function Page1(props) {
           localStorage.setItem('time', !time);
         }}
         className="sun"
-        style={time ? {transform: 'translateX(-50%) translateY(-50vh)'} : {transform: 'translateX(-50%) translateY(-5vh)'}}
+        style={
+          time
+            ? { transform: 'translateX(-50%) translateY(-50vh)', opacity:'0' }
+            : { transform: 'translateX(-50%) translateY(-5vh)', opacity:'1' }
+        }
       ></div>
       <h1 className="hero">
         <button onClick={props.goToAbout} className="btn about_me_btn">
