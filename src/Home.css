@@ -6,6 +6,7 @@
   height: 100vh;
   transition: background 2s;
   position: relative;
+  overflow: hidden;
 }
 
 .mobile_navigation {
@@ -198,7 +199,7 @@
   .sun {
     width: 180px;
     height: 180px;
-    top: 7%;
+    top: 5%;
   }
 
   .moon {
@@ -207,7 +208,11 @@
   }
 
   .hero {
-    bottom: 7%;
+    bottom: 10%;
+  }
+
+  .mobile_navigation{
+    bottom: 10%;
   }
 }
 

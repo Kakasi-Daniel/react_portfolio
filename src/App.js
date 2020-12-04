@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="slider_container">
       <div className="slider" style={{ left: `${translate}vw` }}>
-        <About />
+        <About goToHome={() => setTranslate(-100)} />
         <Home goToAbout={() => setTranslate(0)} goToWork={() => setTranslate(-200)}/>
-        <Work />
+        <Work goToHome={() => setTranslate(-100)} />
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ function Page1(props) {
           localStorage.setItem('time', !time);
         }}
         className="sun"
-        style={time ? {transform: 'translateX(-50%) translateY(-50vh)'} : {transform: 'translateX(-50%) translateY(-2vh)'}}
+        style={time ? {transform: 'translateX(-50%) translateY(-50vh)'} : {transform: 'translateX(-50%) translateY(-5vh)'}}
       ></div>
       <h1 className="hero">
         <button onClick={props.goToAbout} className="btn about_me_btn">
