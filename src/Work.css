@@ -9,6 +9,9 @@
 .work_container {
   background-color: black;
   height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -104,10 +107,13 @@ input[class^='btn-']:hover {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   text-align: center;
+  width: 1280px;
+  margin: auto;
 }
 
 #site {
-  height: 100%;
+  width: 500px;
+  height: 270px;
 }
 
 .item {
@@ -210,6 +216,7 @@ html {
   #items {
     display: block;
     margin-top: 3rem;
+    width: 100%;
   }
   .item {
     margin-top: 1rem;
