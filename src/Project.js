@@ -2,7 +2,6 @@ import React from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LanguageIcon from '@material-ui/icons/Language';
 import './Project.css';
-import Tilt from 'react-tilt';
 
 function Project(props) {
   return (
@@ -15,21 +14,21 @@ function Project(props) {
         <h3>{props.title}</h3>
         <p>{props.desc}</p>
         <div className="buttons">
-          <a href={props.code} target="_blank" className="btn ">
+          <a href={props.code} target="_blank" rel="noreferrer" className="btn ">
             View code &nbsp;
             <GitHubIcon />
           </a>
-          <a href={props.link} target="_blank" className="btn ">
+          <a href={props.link} target="_blank" rel="noreferrer" className="btn ">
             Live Demo &nbsp;
             <LanguageIcon />
           </a>
         </div>
         <div className="buttons_mob">
-          <a href={props.code} target="_blank" className="btn_mob">
+          <a href={props.code} target="_blank" rel="noreferrer" className="btn_mob">
             View code
             <GitHubIcon />
           </a>
-          <a href={props.link} target="_blank" className="btn_mob">
+          <a href={props.link} target="_blank" rel="noreferrer" className="btn_mob">
             Live Demo
             <LanguageIcon />
           </a>

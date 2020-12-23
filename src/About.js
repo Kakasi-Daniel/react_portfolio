@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import jar from './Jar.png';
+// import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+// import jar from './Jar.png';
 
 function About(props) {
   return (
@@ -13,9 +13,3 @@ function About(props) {
 }
 
 export default About;
-
-
-{/* <button onClick={props.goToHome} className="btn back my_work_btn">
-        Back To Home
-        <ArrowForwardIcon />
-      </button> */}

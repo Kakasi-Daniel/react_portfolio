@@ -6,7 +6,7 @@ import Work from './Work'
 
 function App() {
   // eslint-disable-next-line
-  const [translate, setTranslate] = useState(0);
+  const [translate, setTranslate] = useState(-100);
 
   return (
     <div className="slider_container">
