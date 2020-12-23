@@ -9,12 +9,10 @@ function Page1(props) {
     JSON.parse(localStorage.getItem('time')) || false
   );
 
-  let classes = time
-    ? "page1_container night"
-    : "page1_container day";
+  let classes = time ? 'page1_container night' : 'page1_container day';
 
   return (
-    <div className={classes} >
+    <div className={classes}>
       <div
         onClick={() => {
           setTime(!time);
@@ -23,8 +21,8 @@ function Page1(props) {
         className="moon"
         style={
           time
-            ? { transform: 'translateX(-50%) translateY(-0vh)', opacity:'1' }
-            : { transform: 'translateX(-50%) translateY(-50vh)', opacity:'0' }
+            ? { transform: 'translateX(-50%) translateY(-0vh)', opacity: '1' }
+            : { transform: 'translateX(-50%) translateY(-50vh)', opacity: '0' }
         }
       ></div>
       <div
@@ -35,8 +33,8 @@ function Page1(props) {
         className="sun"
         style={
           time
-            ? { transform: 'translateX(-50%) translateY(-50vh)', opacity:'0' }
-            : { transform: 'translateX(-50%) translateY(-5vh)', opacity:'1' }
+            ? { transform: 'translateX(-50%) translateY(-50vh)', opacity: '0' }
+            : { transform: 'translateX(-50%) translateY(-5vh)', opacity: '1' }
         }
       ></div>
       <h1 className="hero">

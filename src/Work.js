@@ -41,14 +41,14 @@ function Work(props) {
   const nextSlide = () => {
     const totalProjects = document.querySelectorAll('.project').length;
     const projectWidth = document.querySelector('.projects_slider').clientWidth;
-    const projectsWidth = -projectWidth * (totalProjects-1);
-    console.log(projectsWidth)
+    const projectsWidth = -projectWidth * (totalProjects - 1);
+    console.log(projectsWidth);
 
     let value;
 
-    value = translate - projectWidth
+    value = translate - projectWidth;
 
-    if(translate === projectsWidth){
+    if (translate === projectsWidth) {
       value = 0;
     }
 
@@ -59,10 +59,12 @@ function Work(props) {
   return (
     <div className="work_container">
       <button onClick={props.goToHome} className="btn back my_work_btn">
-          Back To Home
-          <ArrowBackIcon />
-        </button>
-        <button className="mobile_back" onClick={props.goToHome} ><ArrowBackIcon /></button>
+        Back To Home
+        <ArrowBackIcon />
+      </button>
+      <button className="mobile_back" onClick={props.goToHome}>
+        <ArrowBackIcon />
+      </button>
       <div className="projects_container">
         <button className="arrow arrow_left" onClick={prevSlide}>
           <ArrowBackIosIcon className="fs_large" />
@@ -120,8 +122,8 @@ function Work(props) {
               mobile={dbook_mobile}
               title="Social Platform front-end"
               desc={ctasDesc}
-              code="https://socialpageapp.netlify.app/"
-              link="https://github.com/Kakasi-Daniel/ShitBook"
+              code="https://github.com/Kakasi-Daniel/ShitBook"
+              link="https://socialpageapp.netlify.app/"
             />
             <Project
               desktop={trackcalorie}

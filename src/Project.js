@@ -2,6 +2,7 @@ import React from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LanguageIcon from '@material-ui/icons/Language';
 import './Project.css';
+import Tilt from 'react-tilt';
 
 function Project(props) {
   return (
