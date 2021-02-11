@@ -72,6 +72,13 @@
 }
 
 @media (min-width: 1300px) and (max-width: 1400px) {
+  .projects_slider {
+    width: 80vw;
+    height: 600px;
+    overflow: hidden;
+    font-size: 14px;
+  }
+
   .back {
     position: absolute;
     top: 5%;
@@ -83,6 +90,7 @@
     color: #fff;
     width: auto;
     padding: 15px;
+    z-index: 500;
   }
 }
 
@@ -126,11 +134,11 @@
   .arrow_left {
     left: -30px;
   }
-  
+
   .arrow_right {
     right: -40px;
   }
-  
+
   .fs_large {
     font-size: 70px !important;
   }

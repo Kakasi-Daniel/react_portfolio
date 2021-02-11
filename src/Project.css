@@ -8,7 +8,7 @@
   height: 100%;
 }
 
-.btn_mob{
+.btn_mob {
   display: none;
 }
 
@@ -72,8 +72,15 @@ p {
   width: auto;
 }
 
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .btn {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
 @media (max-width: 1300px) {
-  .preview_img_mobile{
+  .preview_img_mobile {
     display: none;
   }
 }
@@ -85,7 +92,7 @@ p {
     border-radius: 10px;
   }
 
-  .btn_mob{
+  .btn_mob {
     display: flex;
     justify-content: space-between;
     align-items: center;

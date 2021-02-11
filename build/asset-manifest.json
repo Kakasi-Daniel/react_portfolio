@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.31673ebe.chunk.css",
+    "main.css": "./static/css/main.a9eb0a26.chunk.css",
     "main.js": "./static/js/main.2061c3a4.chunk.js",
     "main.js.map": "./static/js/main.2061c3a4.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.48e2aa68.js",
@@ -10,7 +10,7 @@
     "static/js/3.2e719f1e.chunk.js": "./static/js/3.2e719f1e.chunk.js",
     "static/js/3.2e719f1e.chunk.js.map": "./static/js/3.2e719f1e.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.31673ebe.chunk.css.map": "./static/css/main.31673ebe.chunk.css.map",
+    "static/css/main.a9eb0a26.chunk.css.map": "./static/css/main.a9eb0a26.chunk.css.map",
     "static/js/2.519d7327.chunk.js.LICENSE.txt": "./static/js/2.519d7327.chunk.js.LICENSE.txt",
     "static/media/barbut.38095903.png": "./static/media/barbut.38095903.png",
     "static/media/barbut_mobile.51a21861.png": "./static/media/barbut_mobile.51a21861.png",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.48e2aa68.js",
     "static/js/2.519d7327.chunk.js",
-    "static/css/main.31673ebe.chunk.css",
+    "static/css/main.a9eb0a26.chunk.css",
     "static/js/main.2061c3a4.chunk.js"
   ]
 }
