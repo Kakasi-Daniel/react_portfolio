@@ -18,6 +18,12 @@ import dbook from './items/dbook.png';
 import dbook_mobile from './items/dbook_mobile.png';
 import trackcalorie from './items/trackcalorie.png';
 import trackcalorie_mobile from './items/trackcalorie_mobile.png';
+import ipTrack from './items/ipTrack.png';
+import ipTrack_mobile from './items/ipTrack_mobile.png';
+import billSplitter from './items/billSplitter.png';
+import billSplitter_mobile from './items/billSplitter_mobile.png';
+import shortly from './items/shortly.png';
+import shortly_mobile from './items/shortly_mobile.png';
 
 const ctasDesc =
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quam, molestiae repudiandae delectus ipsam, odio consequatur molestias maiores hic ipsum totam illo nemo optio impedit laboriosam alias. Ipsa distinctio nobis quibusdam?';
@@ -93,13 +99,37 @@ function Work(props) {
               code="https://github.com/Kakasi-Daniel/kakasi"
               link="https://kakasidaniel.netlify.app/"
             />
+              <Project
+                desktop={kstore}
+                mobile={kstore_mobile}
+                title="Ecommerce front-end"
+                desc={ctasDesc}
+                code="https://github.com/Kakasi-Daniel/Kstore"
+                link="https://elegant-joliot-20bd3b.netlify.app/"
+              />
             <Project
-              desktop={kstore}
-              mobile={kstore_mobile}
-              title="Ecommerce front-end"
+              desktop={ipTrack}
+              mobile={ipTrack_mobile}
+              title="IP Tracker"
               desc={ctasDesc}
-              code="https://github.com/Kakasi-Daniel/Kstore"
-              link="https://elegant-joliot-20bd3b.netlify.app/"
+              code="https://github.com/Kakasi-Daniel/ip-address-tracker-master"
+              link="https://elastic-curie-1fe812.netlify.app/"
+            />
+            <Project
+              desktop={shortly}
+              mobile={shortly_mobile}
+              title="Address shorter (dead API)"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/url-shortening-api-master"
+              link="https://practical-kalam-c8667b.netlify.app/"
+            />
+            <Project
+              desktop={billSplitter}
+              mobile={billSplitter_mobile}
+              title="Bill Splitter"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/tip-calculator-app-main"
+              link="https://festive-jackson-317800.netlify.app/"
             />
             <Project
               desktop={barbut}
