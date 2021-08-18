@@ -24,6 +24,10 @@ import billSplitter from './items/billSplitter.png';
 import billSplitter_mobile from './items/billSplitter_mobile.png';
 import shortly from './items/shortly.png';
 import shortly_mobile from './items/shortly_mobile.png';
+import FSEGA from './items/FSEGA.png';
+import FSEGA_mobile from './items/FSEGA_mobile.png';
+import aps from './items/aps.png';
+import aps_mobile from './items/aps_mobile.png';
 
 const ctasDesc =
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quam, molestiae repudiandae delectus ipsam, odio consequatur molestias maiores hic ipsum totam illo nemo optio impedit laboriosam alias. Ipsa distinctio nobis quibusdam?';
@@ -84,6 +88,22 @@ function Work(props) {
             style={{ transform: `translateX(${translate}px)` }}
           >
             <Project
+              desktop={aps}
+              mobile={aps_mobile}
+              title="Audio Planet Store"
+              desc={"This one is my favorite. Technologies that I used to build this: SASS, REACT, REACT-ROUTER, useReducer along with Context API. Users are able to authenticate and store their data glad to Google's Firebase Backend System."}
+              code="https://github.com/Kakasi-Daniel/audio_planet_store"
+              link="https://audioplanetstore.web.app/"
+            />
+            <Project
+              desktop={ipTrack}
+              mobile={ipTrack_mobile}
+              title="IP Tracker"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/ip-address-tracker-master"
+              link="https://elastic-curie-1fe812.netlify.app/"
+            />
+            <Project
               desktop={ctas}
               mobile={ctas_mobile}
               title="College Landing Site"
@@ -99,21 +119,21 @@ function Work(props) {
               code="https://github.com/Kakasi-Daniel/kakasi"
               link="https://kakasidaniel.netlify.app/"
             />
-              <Project
-                desktop={kstore}
-                mobile={kstore_mobile}
-                title="Ecommerce front-end"
-                desc={ctasDesc}
-                code="https://github.com/Kakasi-Daniel/Kstore"
-                link="https://elegant-joliot-20bd3b.netlify.app/"
-              />
             <Project
-              desktop={ipTrack}
-              mobile={ipTrack_mobile}
-              title="IP Tracker"
+              desktop={kstore}
+              mobile={kstore_mobile}
+              title="Ecommerce front-end"
               desc={ctasDesc}
-              code="https://github.com/Kakasi-Daniel/ip-address-tracker-master"
-              link="https://elastic-curie-1fe812.netlify.app/"
+              code="https://github.com/Kakasi-Daniel/Kstore"
+              link="https://elegant-joliot-20bd3b.netlify.app/"
+            />
+            <Project
+              desktop={FSEGA}
+              mobile={FSEGA_mobile}
+              title="University allocation results app"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/FSEGA_aloritm_repartizare_candidati"
+              link="https://relaxed-bhaskara-40b6f1.netlify.app/"
             />
             <Project
               desktop={shortly}
