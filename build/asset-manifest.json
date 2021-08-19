@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.de3c9ec6.chunk.css",
-    "main.js": "./static/js/main.bce69b51.chunk.js",
-    "main.js.map": "./static/js/main.bce69b51.chunk.js.map",
+    "main.js": "./static/js/main.e6434e86.chunk.js",
+    "main.js.map": "./static/js/main.e6434e86.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.48e2aa68.js",
     "runtime-main.js.map": "./static/js/runtime-main.48e2aa68.js.map",
     "static/js/2.802fd7fa.chunk.js": "./static/js/2.802fd7fa.chunk.js",
@@ -12,6 +12,10 @@
     "index.html": "./index.html",
     "static/css/main.de3c9ec6.chunk.css.map": "./static/css/main.de3c9ec6.chunk.css.map",
     "static/js/2.802fd7fa.chunk.js.LICENSE.txt": "./static/js/2.802fd7fa.chunk.js.LICENSE.txt",
+    "static/media/FSEGA.23beb4f6.png": "./static/media/FSEGA.23beb4f6.png",
+    "static/media/FSEGA_mobile.6e109f2f.png": "./static/media/FSEGA_mobile.6e109f2f.png",
+    "static/media/aps.2e6d029c.png": "./static/media/aps.2e6d029c.png",
+    "static/media/aps_mobile.1a4af179.png": "./static/media/aps_mobile.1a4af179.png",
     "static/media/barbut.38095903.png": "./static/media/barbut.38095903.png",
     "static/media/barbut_mobile.51a21861.png": "./static/media/barbut_mobile.51a21861.png",
     "static/media/billSplitter.ee1be667.png": "./static/media/billSplitter.ee1be667.png",
@@ -39,6 +43,6 @@
     "static/js/runtime-main.48e2aa68.js",
     "static/js/2.802fd7fa.chunk.js",
     "static/css/main.de3c9ec6.chunk.css",
-    "static/js/main.bce69b51.chunk.js"
+    "static/js/main.e6434e86.chunk.js"
   ]
 }
