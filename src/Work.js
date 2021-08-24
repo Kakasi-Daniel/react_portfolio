@@ -28,6 +28,8 @@ import FSEGA from './items/FSEGA.png';
 import FSEGA_mobile from './items/FSEGA_mobile.png';
 import aps from './items/aps.png';
 import aps_mobile from './items/aps_mobile.png';
+import pixArt from './items/pixArt.png';
+import pixArt_mobile from './items/pixArt_mobile.png';
 
 const ctasDesc =
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quam, molestiae repudiandae delectus ipsam, odio consequatur molestias maiores hic ipsum totam illo nemo optio impedit laboriosam alias. Ipsa distinctio nobis quibusdam?';
@@ -94,6 +96,14 @@ function Work(props) {
               desc={"This one is my favorite. Technologies that I used to build this: SASS, REACT, REACT-ROUTER, useReducer along with Context API. Users are able to authenticate and store their data glad to Google's Firebase Backend System."}
               code="https://github.com/Kakasi-Daniel/audio_planet_store"
               link="https://audioplanetstore.web.app/"
+            />
+            <Project
+              desktop={pixArt}
+              mobile={pixArt_mobile}
+              title="Pix Art"
+              desc={ctasDesc}
+              code="https://github.com/Kakasi-Daniel/Code-Challenge-3---Pixel-Art"
+              link="https://pixelartudg.netlify.app/"
             />
             <Project
               desktop={ipTrack}
