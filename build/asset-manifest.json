@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.de3c9ec6.chunk.css",
-    "main.js": "./static/js/main.e6434e86.chunk.js",
-    "main.js.map": "./static/js/main.e6434e86.chunk.js.map",
+    "main.js": "./static/js/main.7fb8dba8.chunk.js",
+    "main.js.map": "./static/js/main.7fb8dba8.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.48e2aa68.js",
     "runtime-main.js.map": "./static/js/runtime-main.48e2aa68.js.map",
     "static/js/2.802fd7fa.chunk.js": "./static/js/2.802fd7fa.chunk.js",
@@ -34,6 +34,8 @@
     "static/media/kstore_mobile.2a11a7a3.png": "./static/media/kstore_mobile.2a11a7a3.png",
     "static/media/old.fc679256.png": "./static/media/old.fc679256.png",
     "static/media/old_mobile.d7334ae2.png": "./static/media/old_mobile.d7334ae2.png",
+    "static/media/pixArt.f425e273.png": "./static/media/pixArt.f425e273.png",
+    "static/media/pixArt_mobile.3ea22f8a.png": "./static/media/pixArt_mobile.3ea22f8a.png",
     "static/media/shortly.81032ae1.png": "./static/media/shortly.81032ae1.png",
     "static/media/shortly_mobile.7df62e91.png": "./static/media/shortly_mobile.7df62e91.png",
     "static/media/trackcalorie.17fcbdd4.png": "./static/media/trackcalorie.17fcbdd4.png",
@@ -43,6 +45,6 @@
     "static/js/runtime-main.48e2aa68.js",
     "static/js/2.802fd7fa.chunk.js",
     "static/css/main.de3c9ec6.chunk.css",
-    "static/js/main.e6434e86.chunk.js"
+    "static/js/main.7fb8dba8.chunk.js"
   ]
 }
