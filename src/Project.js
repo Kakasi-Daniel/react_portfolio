@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LanguageIcon from '@material-ui/icons/Language';
 import './Project.css';
 
-function Project(props) {
+const Project = forwardRef((props,ref) => {
   return (
-    <div className="project">
+    <div className="project" ref={ref}>
       <div className="previews">
         <img className="preview_img" src={props.desktop} alt="" />
         <img className="preview_img_mobile" src={props.mobile} alt="" />
@@ -36,6 +36,6 @@ function Project(props) {
       </div>
     </div>
   );
-}
+})
 
 export default Project;

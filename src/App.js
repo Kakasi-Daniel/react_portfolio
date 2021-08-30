@@ -5,7 +5,7 @@ import About from './About'
 import Work from './Work'
 
 function App() {
-  // eslint-disable-next-line
+  
   const [translate, setTranslate] = useState(-100);
 
   return (
