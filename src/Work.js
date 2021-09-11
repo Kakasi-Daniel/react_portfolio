@@ -31,6 +31,8 @@ import aps from './items/aps.png';
 import aps_mobile from './items/aps_mobile.png';
 import pixArt from './items/pixArt.png';
 import pixArt_mobile from './items/pixArt_mobile.png';
+import trains from './items/trains.png';
+import trains_mobile from './items/trains_mobile.png';
 
 const ctasDesc =
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quam, molestiae repudiandae delectus ipsam, odio consequatur molestias maiores hic ipsum totam illo nemo optio impedit laboriosam alias. Ipsa distinctio nobis quibusdam?';
@@ -61,6 +63,14 @@ const PROJECTS = [
     link: 'https://elastic-curie-1fe812.netlify.app/',
   },
   {
+    desktop: trains,
+    mobile: trains_mobile,
+    title: 'Trains booking app',
+    desc: ctasDesc,
+    code: 'https://github.com/Kakasi-Daniel/trains_app',
+    link: 'https://trains-861bd.web.app/',
+  },
+  {
     desktop: ctas,
     mobile: ctas_mobile,
     title: 'College Landing Site',
@@ -75,14 +85,6 @@ const PROJECTS = [
     desc: ctasDesc,
     code: 'https://github.com/Kakasi-Daniel/kakasi',
     link: 'https://kakasidaniel.netlify.app/',
-  },
-  {
-    desktop: kstore,
-    mobile: kstore_mobile,
-    title: 'Ecommerce front-end',
-    desc: ctasDesc,
-    code: 'https://github.com/Kakasi-Daniel/Kstore',
-    link: 'https://elegant-joliot-20bd3b.netlify.app/',
   },
   {
     desktop: FSEGA,
@@ -123,14 +125,6 @@ const PROJECTS = [
     desc:  ctasDesc ,
     code: 'https://github.com/Kakasi-Daniel/GitFind',
     link: 'https://kksigit.netlify.app/',
-  },
-  {
-    desktop: dbook,
-    mobile: dbook_mobile,
-    title: 'Social Platform front-end',
-    desc: ctasDesc,
-    code: 'https://github.com/Kakasi-Daniel/ShitBook',
-    link: 'https://socialpageapp.netlify.app/',
   },
   {
     desktop: trackcalorie,

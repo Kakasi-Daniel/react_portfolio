@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.de3c9ec6.chunk.css",
-    "main.js": "./static/js/main.3fd4d1a8.chunk.js",
-    "main.js.map": "./static/js/main.3fd4d1a8.chunk.js.map",
+    "main.js": "./static/js/main.3b5a2a1b.chunk.js",
+    "main.js.map": "./static/js/main.3b5a2a1b.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.48e2aa68.js",
     "runtime-main.js.map": "./static/js/runtime-main.48e2aa68.js.map",
     "static/js/2.802fd7fa.chunk.js": "./static/js/2.802fd7fa.chunk.js",
@@ -39,12 +39,14 @@
     "static/media/shortly.81032ae1.png": "./static/media/shortly.81032ae1.png",
     "static/media/shortly_mobile.7df62e91.png": "./static/media/shortly_mobile.7df62e91.png",
     "static/media/trackcalorie.17fcbdd4.png": "./static/media/trackcalorie.17fcbdd4.png",
-    "static/media/trackcalorie_mobile.128b5208.png": "./static/media/trackcalorie_mobile.128b5208.png"
+    "static/media/trackcalorie_mobile.128b5208.png": "./static/media/trackcalorie_mobile.128b5208.png",
+    "static/media/trains.8d860f9d.png": "./static/media/trains.8d860f9d.png",
+    "static/media/trains_mobile.101600f2.png": "./static/media/trains_mobile.101600f2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.48e2aa68.js",
     "static/js/2.802fd7fa.chunk.js",
     "static/css/main.de3c9ec6.chunk.css",
-    "static/js/main.3fd4d1a8.chunk.js"
+    "static/js/main.3b5a2a1b.chunk.js"
   ]
 }
